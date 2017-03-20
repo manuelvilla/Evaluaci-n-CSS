@@ -13,12 +13,16 @@ body{
 
 .contenido{
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.cabecera {
+.cabecera{
+	border: 1px solid red;
 	background: #5b7989;
 	border-radius: 10px 10px 0 0;
 	width: 100%;
+	height: 10%;
 }
 
 header> h1{
@@ -27,17 +31,37 @@ header> h1{
 	text-shadow: 2px 2px #02010a;
 }
 
+navbar> li> a{
+		display: inline;
+		text-decoration: none;
+		color: white;
+		margin: auto;
+}
+
 /*Para desktop*/
 @media (min-width:900px) {
 
 	.contenido{
 		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
-	navbar a{
-		text-align: right;
-		text-decoration: none;
-		color: white;
+	.cabecera h1, navbar{
+		display:inline;
+	}
+	
+	.cabecera h1{
+		border: 1px solid red;
+		width:60%;
+		float:left;
+	}
+	
+	.cabecera navbar{
+		border: 1px solid red;
+		width: 40%;
+		margin-top: 3.5%;
+		float: right;
 	}
 }
 
@@ -46,5 +70,9 @@ header> h1{
 	
 	.contenido{
 		max-width: 100%;
+	}
+	
+	h1{
+		text-align: center !important;
 	}
 }
