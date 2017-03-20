@@ -1,3 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+#cabecera {
+	background: #5b7989;
+	border-radius: 10px 10px 0 0;
+}
+
+#cabecera h1 {
+	text-align: left;
+	color: white;
+	text-shadow: 2px #02010a;
+}
