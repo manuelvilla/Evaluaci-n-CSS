@@ -1,13 +1,37 @@
 @charset "utf-8";
-/* CSS Document */
 
-#cabecera {
+/*Fuente del sitio*/
+@font-face {
+	font-family: "DancingScript";
+	src: url(../fuentes/DancingScript-Regular.otf);
+}
+
+body{
+	font-family: "DancingScript";
+	background: black;
+}
+
+.cabecera {
 	background: #5b7989;
 	border-radius: 10px 10px 0 0;
 }
 
-#cabecera h1 {
+header {
 	text-align: left;
 	color: white;
 	text-shadow: 2px #02010a;
+}
+
+/*Para desktop*/
+@media (min-width:900px) {
+	
+	.cabecera, .container{
+		width:100%;
+		display: inline-block;
+	}
+}
+
+/*Para móviles*/
+@media (max-width:899px) {
+	
 }
