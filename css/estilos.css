@@ -6,37 +6,51 @@
 	src: url(../fuentes/DancingScript-Regular.otf);
 }
 
+/*Cuerpo del sitio*/
 body{
 	font-family: "DancingScript";
+	color:white;
 	background: black;
 }
 
+/*Contenido del sitio*/
 .contenido{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/*Cabecera del Sitio*/
 .cabecera{
-	border: 1px solid red;
 	background: #5b7989;
 	border-radius: 10px 10px 0 0;
 	width: 100%;
-	height: 10%;
 }
 
+/*Titulo del sitio*/
 header> h1{
 	text-align: left;
 	color: white;
 	text-shadow: 2px 2px #02010a;
+	margin-left: 2%;
 }
 
-navbar> li> a{
-		display: inline;
-		text-decoration: none;
-		color: white;
-		margin: auto;
+.nav{
+	font-size: 1em;
+	text-align: center;
 }
+
+a{
+	display: inline;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+img {
+	width: 10%;
+}
+
 
 /*Para desktop*/
 @media (min-width:900px) {
@@ -47,21 +61,20 @@ navbar> li> a{
 		margin-right: auto;
 	}
 	
-	.cabecera h1, navbar{
-		display:inline;
+	.cabecera{
+		display: flex;
+		flex-direction: row;
+		flex-flow: nowrap;
 	}
 	
-	.cabecera h1{
-		border: 1px solid red;
-		width:60%;
-		float:left;
+	.titulo{
+		width: 65%;
 	}
 	
-	.cabecera navbar{
-		border: 1px solid red;
-		width: 40%;
-		margin-top: 3.5%;
-		float: right;
+	.nav{
+		width: 35%;
+		margin-top: auto;
+		margin-left: auto;
 	}
 }
 
