@@ -37,7 +37,7 @@ header> h1{
 
 /*Navegación del sitio*/
 .nav{
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: center;
 	margin-bottom: 3vh;
 }
@@ -46,33 +46,88 @@ header> h1{
 a{
 	display: inline;
 	color: white;
-	text-decoration: none;
 	text-align: center;
-	padding: 1%;
+	padding: 3%;
+}
+
+.nav navbar a:active{
+	text-decoration: none!important;
+}
+
+.imagen-secundaria p a{
+	font-size: 1.2em;
+	color: black;
 }
 
 /*Imágenes del sitio*/
 /*Imágenes de index*/
+
+img{
+	box-shadow: 2px 2px #02010a;
+	margin: 2%;
+}
+
 .imagen-central{
 	align-content: center;
 	width: 100%;
+	background: #82c3a6;
 }
 
 #imgc{
-	width: 90%;
+	width: 80%;
 }
 
 .imagen-secundaria{
 	align-content: center;
 	width: 100%;
+	background: #d5c75f;
+	border: 1px solid black;
 }
 
 #imgi{
-	width: 90%;
+	width: 80%;
+}
+
+#imgi:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
 }
 
 #imgd{
-	width: 90%;
+	width: 80%;
+}
+
+#imgd:hover{
+	transform: translate(20px,-5px);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+/*Imágenes de Paisajes y Retratos*/
+.img1{
+	
+}
+
+.img2, .img4, .img6{
+	
+}
+
+.img5{
+	
+}
+
+.img
+/*Pie de página*/
+.pie{
+	width: 100%;
+	height: auto;
+	background: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	color: black;
+}
+
+.pie a{
+	color: black;
+	font-size: 1em;
 }
 
 
@@ -108,6 +163,48 @@ a{
 		flex: row nowrap;
 	}
 	
+	.pie{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-flow: nowrap;
+	}
+	
+	.contacto{
+		display: inline-flex;
+		width: 24%;
+		order: 1;
+	}
+	
+	.terminos{
+		display: inline-flex;
+		width: 24%;
+		order: 2;
+	}
+	
+	.redes{
+		display: inline-flex;
+		width: 24%;
+		order: 3;
+	}
+	
+	.derechos{
+		display: inline-flex;
+		width: 24%;
+		order: 4;
+	}
+	
+	.fila1{
+		display: flex;
+		width: 100%;
+	}
+	
+	
+	
+	.fila2{
+		display: flex;
+		width: 100%;
+	}
 }
 
 /*Para móviles*/
