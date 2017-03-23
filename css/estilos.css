@@ -35,21 +35,46 @@ header> h1{
 	margin-left: 2%;
 }
 
+/*Navegación del sitio*/
 .nav{
 	font-size: 1em;
 	text-align: center;
+	margin-bottom: 3vh;
 }
 
+/*Links del sitio*/
 a{
 	display: inline;
 	color: white;
 	text-decoration: none;
 	text-align: center;
+	padding: 1%;
 }
 
-img {
-	width: 10%;
+/*Imágenes del sitio*/
+/*Imágenes de index*/
+.imagen-central{
+	align-content: center;
+	width: 100%;
 }
+
+#imgc{
+	width: 90%;
+}
+
+.imagen-secundaria{
+	align-content: center;
+	width: 100%;
+}
+
+#imgi{
+	width: 90%;
+}
+
+#imgd{
+	width: 90%;
+}
+
 
 
 /*Para desktop*/
@@ -76,6 +101,13 @@ img {
 		margin-top: auto;
 		margin-left: auto;
 	}
+	
+	.imagen-secundaria{
+		width: 100%;
+		display: flex;
+		flex: row nowrap;
+	}
+	
 }
 
 /*Para móviles*/
