@@ -144,6 +144,14 @@ img{
 	color: black;
 }
 
+footer{
+	width: 100%;
+}
+
+h2{
+	text-align: center!important;
+}
+
 .pie ul li{
 	list-style: none;
 }
@@ -194,25 +202,26 @@ img{
 	
 	.contacto{
 		display: inline-flex;
-		width: 24%;
+		width: 24.5%;
 		order: 1;
+		
 	}
 	
 	.terminos{
 		display: inline-flex;
-		width: 24%;
+		width: 24.5%;
 		order: 2;
 	}
 	
 	.redes{
 		display: inline-flex;
-		width: 24%;
+		width: 24.5%;
 		order: 3;
 	}
 	
 	.derechos{
 		display: inline-flex;
-		width: 24%;
+		width: 24.5%;
 		order: 4;
 	}
 	
@@ -259,7 +268,7 @@ img{
 	}
 	
 	#imgc{
-	width: 90%;
+		width: 90%;
 	}
 	
 	#imgi, #imgd{
