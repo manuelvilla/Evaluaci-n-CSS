@@ -250,6 +250,10 @@ img{
 		max-width: 100%;
 	}
 	
+	a{
+		padding: 1%;
+	}
+	
 	h1{
 		text-align: center !important;
 	}
