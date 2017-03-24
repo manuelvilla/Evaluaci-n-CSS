@@ -89,6 +89,8 @@ img{
 }
 
 #imgi:hover{
+	-webkit-transform: rotate(10deg); /*Chrome, Safari y Opera*/
+	-ms-transform: rotate(10deg); /*IE*/
 	transform: rotate(10deg);
 	box-shadow: 2px 2px #82c3a6;
 }
@@ -98,6 +100,8 @@ img{
 }
 
 #imgd:hover{
+	-webkit-transform: translate(20px,-5px); /*Chrome, Safari y Opera*/
+	-ms-transform: translate(20px,-5px); /*IE*/
 	transform: translate(20px,-5px);
 	box-shadow: 2px 2px #82c3a6;
 }
@@ -115,19 +119,19 @@ img{
 
 #brujas, #ibiza{
 	width: 90%;
-	-webkit-filter: blur(10px);
+	-webkit-filter: blur(10px); /*Chrome, Safari y Opera*/
 	filter: blur(10px);
 }
 
 #bruselas, #sevilla, #valencia, #madrid, #foro, #zaragoza{
 	width: 90%;
-	-webkit-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); /*Chrome, Safari y Opera*/
 	filter: grayscale(100%);
 }
 
 #sebastian, #coliseo{
 	width: 90%;
-	-webkit-filter: sepia(90%);
+	-webkit-filter: sepia(90%); /*Chrome, Safari y Opera*/
 	filter: sepia(90%);
 }
 
@@ -179,8 +183,14 @@ li> img{
 	}
 	
 	.cabecera{
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
+		-webkit-flex-direction: row; /*Chrome, Safari, Opera*/
+		-ms-flex-direction: row; /*IE*/
 		flex-direction: row;
+		-webkit-flex-flow: nowrap; /*Chrome, Safari, Opera*/
+		-ms-flex-flow: nowrap; /*IE*/
 		flex-flow: nowrap;
 	}
 	
@@ -196,16 +206,24 @@ li> img{
 	
 	.imagen-secundaria{
 		width: 100%;
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
+		-webkit-flex: row nowrap; /*Chrome, Safari, Opera*/
+		-ms-flex: row nowrap; /*IE*/
 		flex: row nowrap;
 	}
 	
 	.fila1{
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
 		width: 100%;
 	}
 	
 	.fila2{
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
 		width: 100%;
 	}
@@ -228,12 +246,20 @@ li> img{
 	
 	.pie{
 		width: 100%;
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
+		-webkit-flex-direction: column; /*Chrome, Safari, Opera*/
+		-ms-flex-direction: column; /*IE*/
 		flex-direction: column;
+		-webkit-flex-flow: nowrap; /*Chrome, Safari, Opera*/
+		-ms-flex-flow: nowrap; /*IE*/
 		flex-flow: nowrap;
 	}
 	
 	.contacto{
+		display: -webkit-inline-flex; /*Chrome, Safari, Opera*/
+		display: -ms-inline-flex; /*IE*/
 		display: inline-flex;
 		width: 24.5%;
 		order: 1;
@@ -241,18 +267,24 @@ li> img{
 	}
 	
 	.terminos{
+		display: -webkit-inline-flex; /*Chrome, Safari, Opera*/
+		display: -ms-inline-flex; /*IE*/
 		display: inline-flex;
 		width: 24.5%;
 		order: 2;
 	}
 	
 	.redes{
+		display: -webkit-inline-flex; /*Chrome, Safari, Opera*/
+		display: -ms-inline-flex; /*IE*/
 		display: inline-flex;
 		width: 24.5%;
 		order: 3;
 	}
 	
 	.derechos{
+		display: -webkit-inline-flex; /*Chrome, Safari, Opera*/
+		display: -ms-inline-flex; /*IE*/
 		display: inline-flex;
 		width: 24.5%;
 		order: 4;
@@ -268,8 +300,14 @@ li> img{
 	}
 	
 	.cabecera{
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
+		-webkit-flex-direction: row; /*Chrome, Safari, Opera*/
+		-ms-flex-direction: row; /*IE*/
 		flex-direction: row;
+		-webkit-flex-flow: column; /*Chrome, Safari, Opera*/
+		-ms-flex-flow:column; /*IE*/
 		flex-flow: column;
 	}
 	
@@ -299,8 +337,14 @@ li> img{
 	
 	.pie{
 		width: 100%;
+		display: -webkit-flex; /*Chrome, Safari, Opera*/
+		display: -ms-flex; /*IE*/
 		display: flex;
+		-webkit-flex-direction: row; /*Chrome, Safari, Opera*/
+		-ms-flex-direction: row; /*IE*/
 		flex-direction: row;
+		-webkit-flex-flow: column; /*Chrome, Safari, Opera*/
+		-ms-flex-flow:column; /*IE*/
 		flex-flow: column;
 	}
 	
