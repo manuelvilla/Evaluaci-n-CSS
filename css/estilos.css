@@ -311,6 +311,10 @@ li> img{
 		flex-flow: column;
 	}
 	
+	.cabecera{
+		animation: header 3s;
+	}
+	
 	.titulo{
 		width: 100%;
 	}
@@ -371,5 +375,21 @@ li> img{
 	
 	.pie ul li{
 	list-style: none;
+	}
+}
+
+/*Animación para móvil*/
+@-webkit-keyframes header{
+
+	0%{
+		margin-top: 150%;
+	}
+
+	60%{
+		margin-top: -5%;
+	}
+
+	100%{
+		margin-top: 0%
 	}
 }
